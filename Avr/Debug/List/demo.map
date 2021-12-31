@@ -1,0 +1,90 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+error                                                                             0x0160       4
+pre_error                                                                         0x0164       4
+Pout                                                                              0x0168       4
+Iout                                                                              0x016C       4
+Dout                                                                              0x0170       4
+out                                                                               0x0174       4
+integral                                                                          0x0178       4
+derivative                                                                        0x017C       4
+Kd                                                                                0x0180       2
+ADC_val_0                                                                         0x0182       4
+ADC_val_1                                                                         0x0186       4
+Volt_0                                                                            0x018A       4
+Weight_0                                                                          0x018E       4
+Volt_1                                                                            0x0192       4
+Weight_1                                                                          0x0196       4
+str2                                                                              0x019A      20
+function                                                                          0x01AE     400
+number                                                                            0x033E       2
+i                                                                                 0x0340       2
+j                                                                                 0x0342       2
+l                                                                                 0x0344       2
+spd1                                                                              0x0346       4
+spd3                                                                              0x034A       4
+spd4                                                                              0x034E       4
+Ts                                                                                0x0352       4
+cmd                                                                               0x0356       2
+output                                                                            0x0358       4
+func_prevnumber                                                                   0x035C       2
+func_number                                                                       0x035E       2
+timer_cnt                                                                         0x0360       4
+capture_pulse                                                                     0x0364       4
+rx_buffer                                                                         0x0368       8
+rx_wr_index                                                                       0x0370       1
+rx_rd_index                                                                       0x0371       1
+rx_counter                                                                        0x0372       1
+_seed                                                                             0x0373       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+ext_cnt2x                                                                         R4,R5        2
+ext_cnt4x                                                                         R6,R7        2
+mode                                                                              R8,R9        2
+Kp                                                                                R10,R11      2
+Ki                                                                                R12,R13      2
+rx_buffer_overflow                                                                R2.0      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x0012E      5
+ext_int1_isr                                                                      0x00133      9
+usart_rx_isr                                                                      0x0013C     48
+timer1_capt_isr                                                                   0x0016C     40
+read_adc                                                                          0x00194     13
+main                                                                              0x001A1    115
+PID_controller                                                                    0x00214    155
+compare                                                                           0x002AF     84
+substring                                                                         0x00303     41
+startwith                                                                         0x0032C     15
+Function1x                                                                        0x0033B     53
+Function2x                                                                        0x00370     48
+Function4x                                                                        0x003A0     48
+Kp_function                                                                       0x003D0      4
+Ki_function                                                                       0x003D4      4
+Kd_function                                                                       0x003D8      8
+SetPoint                                                                          0x003E0      8
+mode_function                                                                     0x003E8      5
+ftrunc                                                                            0x003ED     48
+floor                                                                             0x0041D     15
+strcpyf                                                                           0x0042C     12
+strlen                                                                            0x00438     11
+strlenf                                                                           0x00443     12
+strncmp                                                                           0x0044F     25
+atoi                                                                              0x00468     52
+ftoa                                                                              0x0049C    131
+putchar                                                                           0x0051F      7
+put_usart_G103                                                                    0x00526      8
+_ftoe_G103                                                                        0x0052E    153
+_print_G103                                                                       0x005C7    463
+printf                                                                            0x00796     30
+isdigit                                                                           0x007B4      9
+isspace                                                                           0x007BD     11
